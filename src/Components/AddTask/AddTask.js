@@ -8,7 +8,10 @@ const AddTask = () => {
     const dispatch = useDispatch ()
 
     const handleAdd = () => {
+        description?
         dispatch (add_task({id:Math.random(), description, isDone: false}))
+        :
+        alert('Cannot add an empty task!')
     }
 
 
